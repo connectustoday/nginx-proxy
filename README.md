@@ -1,5 +1,10 @@
 ## Forked for ConnectUS
+To deploy just "docker run --name Frontend- -d -p 80:80 -v /var/run/docker.sock:/tmp/docker.sock:ro connectus/nginx-proxy"
 
+Each container with the same "VIRTUAL_HOST" env will be grouped to be load balanced under that hostname.
+
+-----
+Original Readme:
 
 nginx-proxy sets up a container running nginx and [docker-gen][1].  docker-gen generates reverse proxy configs for nginx and reloads nginx when containers are started and stopped.
 
